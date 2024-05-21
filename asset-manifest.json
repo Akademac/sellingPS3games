@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/sellingPS3games/static/css/main.96a5c141.css",
-    "main.js": "/sellingPS3games/static/js/main.24b8c4f0.js",
+    "main.js": "/sellingPS3games/static/js/main.b367223b.js",
     "static/media/galleryImg_2.jpg": "/sellingPS3games/static/media/galleryImg_2.7346c8abe94126c69062.jpg",
     "index.html": "/sellingPS3games/index.html",
     "main.96a5c141.css.map": "/sellingPS3games/static/css/main.96a5c141.css.map",
-    "main.24b8c4f0.js.map": "/sellingPS3games/static/js/main.24b8c4f0.js.map"
+    "main.b367223b.js.map": "/sellingPS3games/static/js/main.b367223b.js.map"
   },
   "entrypoints": [
     "static/css/main.96a5c141.css",
-    "static/js/main.24b8c4f0.js"
+    "static/js/main.b367223b.js"
   ]
 }
