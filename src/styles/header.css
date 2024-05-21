@@ -1,0 +1,250 @@
+.header__div {
+  width: 100%;
+  height: 3rem;
+  border-bottom: 2px solid var(--mainBlue);
+  position: fixed;
+  z-index: 100000;
+}
+
+.mainLogo__span {
+  width: 2rem;
+  height: 2rem;
+  margin-left: 2rem;
+  position: relative;
+}
+
+.mainLogo__span > img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Main Nav */
+
+.mainNav__wrapper {
+  width: 35rem;
+  height: 100%;
+  float: right;
+  position: relative;
+}
+
+.mainNav__ul {
+  list-style: none;
+  margin-top: 1rem;
+  margin-right: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.mainNav__ul > li a {
+  display: inline;
+  transition: 2s all;
+  cursor: pointer;
+}
+
+.mainNav__ul > li a:hover {
+  color: var(--mainBlue);
+}
+
+.dd__btn {
+  font-size: 1rem;
+  border: 1px solid var(--mainBlue);
+  color: var(--mainBlue);
+  padding: 0rem 0.2rem;
+  margin-left: -0.3rem;
+  cursor: pointer;
+  transition: 2s all;
+  box-shadow: 1px 1px 2px var(--mainBlack);
+  border-radius: 3px;
+  background-color: var(--mainWhite);
+}
+
+.dd__btn:hover {
+  color: var(--mainBlack);
+  border: 1px solid var(--mainBlack);
+}
+
+.shoppingCart__btn b {
+  margin-left: 0.1rem;
+  color: var(--mainBlue);
+}
+
+/* Drop Down */
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown__menu {
+  position: absolute;
+  padding: 1rem;
+  width: 10rem;
+  left: -0.46rem;
+  padding-left: 0.2rem;
+  opacity: 0;
+  transition: 1s ease-in;
+  transform: translateY(-0.6rem);
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.dropdown__menu > ul {
+  list-style: none;
+}
+
+.dropdown__menu li {
+  padding: 0.5rem 0.4rem;
+  margin-top: 0.1rem;
+  box-shadow: 1px 1px 2px var(--mainBlack);
+  cursor: pointer;
+  transition: 1s all;
+  font-weight: 500;
+  text-transform: capitalize;
+  pointer-events: all;
+}
+
+.dropdown__menu li:hover {
+  box-shadow: 2px 2px 4px var(--mainBlack);
+}
+
+.dropdown__menu a:first-child {
+  padding-top: 0rem;
+}
+
+.dropdown > .dd__btn:focus + .dropdown__menu {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(-0.3rem);
+  visibility: visible;
+}
+
+/* Mini Nav */
+
+.navMini__btn {
+  width: 100%;
+  height: 100%;
+  display: none;
+  margin: 0rem auto;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1000;
+  font-size: 1.2rem;
+  transition: 2s all;
+}
+
+.fa-times {
+  color: white;
+  transition: 2s all;
+  font-size: 1.2rem;
+}
+
+.navMini__btn > i {
+  cursor: pointer;
+}
+
+.mini__nav {
+  width: 100%;
+  height: 0vh;
+  top: 0;
+  background-color: var(--mainBlue);
+  position: absolute;
+  z-index: -1000;
+  visibility: hidden;
+  transition: 1s all;
+  color: white;
+  overflow: hidden;
+}
+
+.mini__nav_active {
+  height: 100vh;
+  visibility: visible;
+}
+
+.miniNav__ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-direction: column;
+  list-style: none;
+}
+
+.miniNav__ul ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: -1rem;
+}
+
+.miniNav__ul ul > a {
+  margin-top: 2rem;
+  color: var(--mainWhite);
+}
+
+.miniNav__ul > li {
+  padding-top: 2rem;
+  font-size: 2rem;
+}
+
+.miniNav__ul > li:first-child {
+  padding-top: 0rem;
+}
+
+.miniNav__hr {
+  width: 50%;
+  margin-top: 4rem;
+}
+
+.mini__nav b {
+  color: var(--mainWhite) !important;
+}
+
+/* Media Queris */
+
+@media screen and (max-width: 700px) {
+  .navMini__btn {
+    display: flex;
+  }
+
+  .mainNav__wrapper {
+    display: none;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .miniNav__ul > li {
+    font-size: 1.2rem;
+  }
+
+  .miniNav__ul > li:first-child {
+    padding-top: 0rem;
+    margin-top: -4rem;
+  }
+
+  .miniNav__hr {
+    width: 50%;
+    margin-top: 1rem;
+  }
+
+  .miniNav__ul ul > a {
+    margin-top: 1rem;
+    color: var(--mainWhite);
+  }
+}
+
+@media screen and (max-height: 500px) {
+  /* Header */
+
+  .header__div {
+    height: 2.5rem;
+  }
+
+  .miniNav__ul > li {
+    padding-top: 1.5rem;
+    font-size: 1rem;
+  }
+}

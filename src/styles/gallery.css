@@ -1,0 +1,180 @@
+.gallery__container {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden!important;
+}
+
+.gallery_body {
+  position: fixed;
+}
+
+.container {
+  width: calc(10 * 100vw);
+  height: 100%;
+  margin: 0px;
+  top: 0;
+  left:0;
+  position: relative;
+  transition: 2s all;
+  padding-top: 4rem;
+}
+
+.imgs_div {
+  display: inline;
+  float: left;
+  background-color: white;
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px;
+  z-index: -10;
+}
+
+.imgs {
+  display: inline;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0px;
+  padding: 0px;
+  border-radius: 10px;
+}
+
+.over_div {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+  
+}
+
+.left_arrow {
+  z-index: 10;
+  position: absolute;
+  left: 1rem!important;
+  top: 50%;
+  font-size: 2rem;
+  color: black;
+  opacity: .1;
+  transition: 2s all;
+  display: inline;
+}
+
+.right_arrow {
+  right: 1rem!important;
+  z-index: 10;
+  position: absolute;
+  top: 50%;
+  font-size: 2rem;
+  color: black;
+  opacity: .1;
+  transition: 2s all;
+  display: none;
+}
+
+.left_arrow:hover, .right_arrow:hover {
+  opacity: .5;
+  cursor: pointer;
+}
+
+.go_back {
+  color: red;
+  position: absolute;
+  font-size: 2rem;
+  margin: .5rem;
+  transition: 2s all;
+  left: 0;
+  top: 3rem;
+}
+
+.go_back:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.go_back > i {
+  padding-bottom: -1rem;
+  margin-top: -1rem;
+}
+
+/* Meida queris */
+
+/* @media screen and (max-width: 1300px) {
+  .left_arrow, .right_arrow {
+    color: var(--mainWhite);
+    opacity: .9;
+  }
+
+} */
+
+/* Window height arrows! Queris */
+
+@media screen and (max-height: 800px) {
+  /* Arrows */
+
+  .left_arrow {
+    top: 52%;
+  }
+  
+  .right_arrow {
+    top: 52%;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  /* Arrows */
+
+  .left_arrow {
+    top: 53%;
+  }
+  
+  .right_arrow {
+    top: 53%;
+  }
+}
+
+
+@media screen and (max-height: 500px) {
+  /* Arrows */
+
+  .left_arrow {
+    top: 57%;
+  }
+  
+  .right_arrow {
+    top: 57%;
+  }
+}
+
+
+@media screen and (max-height: 400px) {
+  /* Arrows */
+
+  .left_arrow {
+    top: 60%;
+    font-size: 1.5rem;
+  }
+  
+  .right_arrow {
+    top: 60%;
+    font-size: 1.5rem;
+
+  }
+}
+
+@media screen and (max-width: 400px) {
+  /* Arrows */
+
+  .left_arrow {
+    font-size: 1.5rem;
+  }
+  
+  .right_arrow {
+    font-size: 1.5rem;
+
+  }
+}
